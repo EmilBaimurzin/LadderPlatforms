@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="320dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="380dp"
+        android:background="@drawable/gameover">
+
+        <LinearLayout
+            android:layout_marginTop="130dp"
+            android:layout_width="200dp"
+            android:gravity="center_vertical"
+            android:layout_height="60dp"
+            android:background="@drawable/gameover02">
+
+            <TextView
+                android:layout_marginStart="21dp"
+                android:textSize="32sp"
+                style="@style/BasicText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+
+            <TextView
+                android:id="@+id/top1"
+                android:layout_marginStart="41dp"
+                android:textSize="27sp"
+                style="@style/BasicText"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                tools:text="123"/>
+
+            <ImageView
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="200dp"
+            android:gravity="center_vertical"
+            android:layout_height="60dp"
+            android:background="@drawable/gameover02">
+
+            <TextView
+                android:layout_marginStart="21dp"
+                android:textSize="32sp"
+                style="@style/BasicText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+
+            <TextView
+                android:id="@+id/top2"
+                android:layout_marginStart="39dp"
+                android:textSize="27sp"
+                style="@style/BasicText"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                tools:text="123"/>
+
+            <ImageView
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="200dp"
+            android:gravity="center_vertical"
+            android:layout_height="60dp"
+            android:background="@drawable/gameover02">
+
+            <TextView
+                android:id="@+id/yourPlace"
+                android:textSize="32sp"
+                android:paddingTop="2dp"
+                style="@style/BasicText"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                tools:text="125"/>
+
+            <TextView
+                android:id="@+id/yourTop"
+                android:layout_marginStart="21dp"
+                android:textSize="27sp"
+                style="@style/BasicText"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                tools:text="123"/>
+
+            <ImageView
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.ladder.game.core.library.CustomImageButton
+        android:id="@+id/restart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|bottom"
+        android:src="@drawable/restart"/>
+
+    <com.ladder.game.core.library.CustomImageButton
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="end"
+        android:src="@drawable/close"/>
+
+</FrameLayout>

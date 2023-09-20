@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.ladder.game.ui.start_point.FragmentStartPoint"
+        android:label="FragmentMain" >
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentLadderGame"
+            app:destination="@id/fragmentLadderGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLadderGame"
+        android:name="com.ladder.game.ui.ladder_game.FragmentLadderGame"
+        android:label="FragmentLadderGame" >
+        <action
+            android:id="@+id/action_fragmentLadderGame_to_dialogResult"
+            app:destination="@id/dialogResult" />
+        <action
+            android:id="@+id/action_fragmentLadderGame_to_dialogPause"
+            app:destination="@id/dialogPause" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogResult"
+        android:name="com.ladder.game.ui.dialogs.result.DialogResult"
+        android:label="DialogResult" >
+        <argument
+            android:name="stars"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/dialogPause"
+        android:name="com.ladder.game.ui.dialogs.DialogPause"
+        android:label="DialogPause" />
+</navigation>
